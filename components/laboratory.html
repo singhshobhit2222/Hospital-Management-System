@@ -1,0 +1,32 @@
+<div class="container">
+	<br>
+	<form class="form-horizontal" action="actions/test.php" method="post" enctype="multipart/form-data">
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="pid">Patient ID</label>
+			<div class="col-sm-10">
+				<input type="number" name="pid" id="pid" required placeholder="Enter Patient ID" class="form-control">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="dis">Test</label>
+		    <div class="col-sm-10"> 
+				<label class="checkbox"><input type="checkbox" value="Blood" name="test[]">Blood</label>
+				<label class="checkbox"><input type="checkbox" value="Urine" name="test[]">Urine</label>
+				<label class="checkbox"><input type="checkbox" value="Sugar" name="test[]">Sugar</label>
+				<label class="checkbox"><input type="checkbox" value="Liver Functionality" name="test[]">Liver Functionality</label>
+				<label class="checkbox"><input type="checkbox" value="Blood Pressure" name="test[]">Blood Pressure</label>
+				<label class="checkbox"><input type="checkbox" value="Heart Functionality" name="test[]">Heart Functionality</label>
+				<label class="checkbox"><input type="checkbox" value="HIV" name="test[]">HIV</label>
+		    </div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="med">Report</label>
+			<div class="col-sm-10">
+				<input type="file" name="report[]" id="report" multiple accept="image/*, application/pdf">
+			</div>
+		</div>
+		<div class="form-group">
+			<button class="btn btn-success center-block" type="submit"><i class="fa fa-fw fa-check"></i> Add Report</button>
+		</div>
+	</form>
+</div>
